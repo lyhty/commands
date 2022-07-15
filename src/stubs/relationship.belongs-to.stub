@@ -1,0 +1,45 @@
+<?php
+
+namespace {{ namespace }};
+
+use {{ namespacedModel }};
+use {{ namespacedRelationClass }};
+
+/**
+ * @property {{ namespacedRelationshipInstanceClass }} ${{ relationship }}
+ * Return {{ relationshipLongString }}.
+ */
+trait {{ class }}
+{
+    /**
+     * Get the {{ relationshipString }} relation key for the model.
+     *
+     * @return string
+     */
+    public static function get{{ ucRelationship }}KeyName()
+    {
+        return defined('static::{{ snakeUpperCaseClassName }}_KEY')
+            ? constant('static::{{ snakeUpperCaseClassName }}_KEY')
+            : '{{ foreignKeyPrefix }}_id';
+    }
+
+    /**
+     * Get the value of the model's {{ relationshipString }} relation key.
+     *
+     * @return mixed
+     */
+    public function get{{ ucRelationship }}Key()
+    {
+        return $this->getAttribute($this->get{{ ucRelationship }}KeyName());
+    }
+
+    /**
+     * Return {{ relationshipLongString }}.
+     *
+     * @return \{{ namespacedRelationClass }}
+     */
+    public function {{ relationship }}(): {{ relationClass }}
+    {
+        return $this->{{ relationMethod }}({{ model }}::class, $this->get{{ ucRelationship }}KeyName());
+    }
+}
