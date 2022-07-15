@@ -1,16 +1,16 @@
-<p align="center">
-    <img src="https://matti.suoraniemi.com/storage/forur.png" width="400">
+<p>
+    <img src="https://matti.suoraniemi.com/storage/lyhty-commands.png" width="400">
 </p>
 
-<p align="center">
-    <a href="https://packagist.org/packages/sirmathays/convenient-laravel-commands">
-        <img src="https://img.shields.io/packagist/dt/sirmathays/convenient-laravel-commands" alt="Total Downloads">
+<p>
+    <a href="https://packagist.org/packages/lyhty/commands">
+        <img src="https://img.shields.io/packagist/dt/lyhty/commands" alt="Total Downloads">
     </a>
-    <a href="https://packagist.org/packages/sirmathays/convenient-laravel-commands">
-        <img src="https://img.shields.io/packagist/v/sirmathays/convenient-laravel-commands" alt="Latest Stable Version">
+    <a href="https://packagist.org/packages/lyhty/commands">
+        <img src="https://img.shields.io/packagist/v/lyhty/commands" alt="Latest Stable Version">
     </a>
-    <a href="https://packagist.org/packages/sirmathays/convenient-laravel-commands">
-        <img src="https://img.shields.io/packagist/l/sirmathays/convenient-laravel-commands" alt="License">
+    <a href="https://packagist.org/packages/lyhty/commands">
+        <img src="https://img.shields.io/packagist/l/lyhty/commands" alt="License">
     </a>
 </p>
 
@@ -20,7 +20,7 @@ This package provides some additional, convenient commands for you to use with y
 
 Install the package with Composer:
 
-    composer require sirmathays/convenient-laravel-commands
+    composer require lyhty/commands
 
 ## Commands
 
