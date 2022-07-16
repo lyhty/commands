@@ -76,4 +76,4 @@ Creates a generator command and a stub. Command parses the type name from the gi
 
 ## License
 
-Convenient Laravel Commands is open-sourced software licensed under the [MIT license](LICENSE.md).
+Lyhty Commands is open-sourced software licensed under the [MIT license](LICENSE.md).
