@@ -2,17 +2,11 @@
     <img src="https://matti.suoraniemi.com/storage/lyhty-commands.png" width="400">
 </p>
 
-<p>
-    <a href="https://packagist.org/packages/lyhty/commands">
-        <img src="https://img.shields.io/packagist/dt/lyhty/commands" alt="Total Downloads">
-    </a>
-    <a href="https://packagist.org/packages/lyhty/commands">
-        <img src="https://img.shields.io/packagist/v/lyhty/commands" alt="Latest Stable Version">
-    </a>
-    <a href="https://packagist.org/packages/lyhty/commands">
-        <img src="https://img.shields.io/packagist/l/lyhty/commands" alt="License">
-    </a>
-</p>
+[![Total Downloads](https://img.shields.io/packagist/dt/lyhty/commands?style=flat-square)](https://packagist.org/packages/lyhty/commands)
+[![Latest Stable Version](https://img.shields.io/packagist/v/lyhty/commands?style=flat-square)](https://packagist.org/packages/lyhty/commands)
+[![License](https://img.shields.io/packagist/l/lyhty/commands?style=flat-square)](https://packagist.org/packages/lyhty/commands)
+
+<!-- CUTOFF -->
 
 This package provides some additional, convenient commands for you to use with your Laravel project.
 
