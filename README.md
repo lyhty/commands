@@ -3,7 +3,8 @@
 </p>
 
 [![Latest Stable Version](https://img.shields.io/packagist/v/lyhty/commands?style=flat-square)](https://packagist.org/packages/lyhty/commands)
-[![PHP](https://img.shields.io/packagist/php-v/lyhty/commands?style=flat-square)](https://packagist.org/packages/lyhty/commands)
+[![PHP](https://img.shields.io/packagist/php-v/lyhty/commands?style=flat-square&label=&logo=php&logoColor=white)](https://packagist.org/packages/lyhty/commands)
+[![Laravel](https://img.shields.io/static/v1?label=&message=^7.0%20|%20^8.0%20|%20^9.0&color=red&style=flat-square&logo=laravel&logoColor=white)](https://packagist.org/packages/lyhty/commands)
 [![Total Downloads](https://img.shields.io/packagist/dt/lyhty/commands?style=flat-square)](https://packagist.org/packages/lyhty/commands)
 [![License](https://img.shields.io/packagist/l/lyhty/commands?style=flat-square)](https://packagist.org/packages/lyhty/commands)
 
