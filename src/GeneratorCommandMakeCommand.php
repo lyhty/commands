@@ -65,7 +65,7 @@ class GeneratorCommandMakeCommand extends GeneratorCommand
     }
 
     /**
-     * Undocumented function
+     * Get the type option or guess from inputted name.
      *
      * @return string
      */

@@ -32,7 +32,7 @@ abstract class RelationBridge
 
     /**
      * The stub affix that will be appended to the stub name.
-     * E.g. 'morph' = 'relationship.morph.stub'
+     * E.g. 'morph' = 'relationship.morph.stub'.
      *
      * @var string|null
      */
@@ -52,7 +52,7 @@ abstract class RelationBridge
      * Get the relation class name.
      *
      * @param  bool  $basename [optional]
-     * Should either the full class name or just it's basename be returned. Defaults to `true`.
+     *                         Should either the full class name or just it's basename be returned. Defaults to `true`.
      * @return string
      */
     public static function getRelationClassName(bool $basename = true): string
@@ -75,7 +75,7 @@ abstract class RelationBridge
 
     /**
      * Return the "count" (used by Str::plural primarily)
-     * 1: One, 2: Many
+     * 1: One, 2: Many.
      *
      * @return int
      */
