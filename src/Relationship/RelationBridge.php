@@ -51,8 +51,8 @@ abstract class RelationBridge
     /**
      * Get the relation class name.
      *
-     * @param  bool  $basename [optional]
-     *                         Should either the full class name or just it's basename be returned. Defaults to `true`.
+     * @param  bool  $basename  [optional]
+     *                          Should either the full class name or just it's basename be returned. Defaults to `true`.
      * @return string
      */
     public static function getRelationClassName(bool $basename = true): string
