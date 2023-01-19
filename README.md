@@ -30,6 +30,7 @@ Here's a brief documentation on the make commands the package provides to be use
 
     artisan make:interface <name>
     artisan make:trait <name>
+    artisan make:enum --backed[=BACKED] <name>
 
 ### Commands for Model development
 
