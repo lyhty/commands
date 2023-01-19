@@ -18,6 +18,7 @@ return [
     Lyhty\Commands\ClassMakeCommand::class => true,
     Lyhty\Commands\InterfaceMakeCommand::class => true,
     Lyhty\Commands\TraitMakeCommand::class => true,
+    Lyhty\Commands\EnumMakeCommand::class => true,
 
     /**
      * Commands for Model development.
