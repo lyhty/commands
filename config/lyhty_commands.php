@@ -18,7 +18,7 @@ return [
     Lyhty\Commands\ClassMakeCommand::class => true,
     Lyhty\Commands\InterfaceMakeCommand::class => true,
     Lyhty\Commands\TraitMakeCommand::class => true,
-    Lyhty\Commands\EnumMakeCommand::class => true,
+    Lyhty\Commands\EnumMakeCommand::class => version_compare(PHP_VERSION, '8.1', '>='),
 
     /**
      * Commands for Model development.
