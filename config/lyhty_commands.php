@@ -36,6 +36,6 @@ return [
     /**
      * Commands for creating Spatie's QueryBuilder classes.
      */
-    Lyhty\Commands\QueryFilterMakeCommand::class => true,
-    Lyhty\Commands\QuerySortMakeCommand::class => true,
+    Lyhty\Commands\QueryFilterMakeCommand::class => interface_exists('Spatie\QueryBuilder\Sorts\Sort'),
+    Lyhty\Commands\QuerySortMakeCommand::class => interface_exists('Spatie\QueryBuilder\Filters\Filter'),
 ];

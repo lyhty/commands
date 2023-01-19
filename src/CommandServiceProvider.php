@@ -45,15 +45,6 @@ class CommandServiceProvider extends ServiceProvider
                 return $active === true;
             });
 
-            // If spatie query builder package exists.
-            if (! interface_exists('Spatie\QueryBuilder\Sorts\Sort')) {
-                unset($commands[QuerySortMakeCommand::class]);
-            }
-
-            if (! interface_exists('Spatie\QueryBuilder\Filters\Filter')) {
-                unset($commands[QueryFilterMakeCommand::class]);
-            }
-
             $this->commands(array_keys($commands));
         }
     }
