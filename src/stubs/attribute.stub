@@ -1,0 +1,11 @@
+<?php
+
+namespace {{ namespace }};
+
+use Attribute;
+
+#[Attribute(Attribute::{{ attributeTarget }})]
+{{ classType }} {{ class }}
+{
+    //
+}

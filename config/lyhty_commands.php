@@ -15,6 +15,7 @@ return [
     /**
      * Commands for creating PHP OOP types.
      */
+    Lyhty\Commands\AttributeMakeCommand::class => version_compare(PHP_VERSION, '8.0', '>='),
     Lyhty\Commands\ClassMakeCommand::class => true,
     Lyhty\Commands\InterfaceMakeCommand::class => true,
     Lyhty\Commands\TraitMakeCommand::class => true,

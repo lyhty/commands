@@ -26,7 +26,13 @@ Here's a brief documentation on the make commands the package provides to be use
 
     artisan make:class --type[=TYPE] <name>
 
-> Valid type options: final, abstract.
+> Valid values for option `type`: `final`, `abstract`.
+
+    artisan make:attribute --type[=TYPE] --target[=TARGET] <name>
+
+> Same value for option `type` as in `make:class`
+>
+> Valid values for option `target`: `class`, `function`, `method`, `property`, `class_constant`, `parameter`, `all`
 
     artisan make:interface <name>
     artisan make:trait <name>
