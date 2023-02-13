@@ -38,7 +38,7 @@ class AttributeMakeCommand extends ClassMakeCommand
     {
         $stub = parent::replaceClassType($stub);
 
-        if (!is_string($targetOption = $this->option('target'))) {
+        if (! is_string($targetOption = $this->option('target'))) {
             $targetOption = 'all';
         }
 
