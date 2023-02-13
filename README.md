@@ -30,7 +30,7 @@ Here's a brief documentation on the make commands the package provides to be use
 
     artisan make:attribute --type[=TYPE] --target[=TARGET] <name>
 
-> Same value for option `type` as in `make:class`
+> Same valid values for option `type` as in `make:class`
 >
 > Valid values for option `target`: `class`, `function`, `method`, `property`, `class_constant`, `parameter`, `all`
 
