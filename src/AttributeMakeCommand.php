@@ -62,9 +62,8 @@ class AttributeMakeCommand extends ClassMakeCommand
      */
     protected function getOptions()
     {
-        return array_merge(
-            parent::getOptions(),
-            ['target', null, InputOption::VALUE_OPTIONAL, 'Define attribute target: class/function/method/property/class_constant/parameter/all']
-        );
+        return array_merge(parent::getOptions(), [
+            ['target', null, InputOption::VALUE_OPTIONAL, 'Define attribute target: class/function/method/property/class_constant/parameter/all'],
+        ]);
     }
 }
