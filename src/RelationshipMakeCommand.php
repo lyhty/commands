@@ -107,7 +107,7 @@ class RelationshipMakeCommand extends GeneratorCommand
      *
      * @return string
      */
-    public function getModel(string $choice = null): string
+    public function getModel(?string $choice = null): string
     {
         $option = 'model';
 
@@ -131,10 +131,10 @@ class RelationshipMakeCommand extends GeneratorCommand
     /**
      * Get qualified model name.
      *
-     * @param  string  $choice
+     * @param  string|null  $choice
      * @return string
      */
-    public function getQualifiedModel(string $choice = null): string
+    public function getQualifiedModel(?string $choice = null): string
     {
         if (is_null($model = $this->getModel($choice))) {
             return '';
@@ -148,10 +148,10 @@ class RelationshipMakeCommand extends GeneratorCommand
     /**
      * Get the basename of the qualified model.
      *
-     * @param  string  $choice
+     * @param  string|null  $choice
      * @return string
      */
-    public function getModelBasename(string $choice = null): string
+    public function getModelBasename(?string $choice = null): string
     {
         return class_basename($this->getQualifiedModel($choice));
     }
