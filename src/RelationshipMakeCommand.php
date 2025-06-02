@@ -104,8 +104,6 @@ class RelationshipMakeCommand extends GeneratorCommand
 
     /**
      * Get model name.
-     *
-     * @return string
      */
     public function getModel(?string $choice = null): string
     {
@@ -130,9 +128,6 @@ class RelationshipMakeCommand extends GeneratorCommand
 
     /**
      * Get qualified model name.
-     *
-     * @param  string|null  $choice
-     * @return string
      */
     public function getQualifiedModel(?string $choice = null): string
     {
@@ -147,9 +142,6 @@ class RelationshipMakeCommand extends GeneratorCommand
 
     /**
      * Get the basename of the qualified model.
-     *
-     * @param  string|null  $choice
-     * @return string
      */
     public function getModelBasename(?string $choice = null): string
     {
@@ -174,7 +166,7 @@ class RelationshipMakeCommand extends GeneratorCommand
         $relCount = $bridge->getCount();
 
         $namespacedRelationshipInstanceClass = $bridge->returnsCollection()
-            ? '\\'.Collection::class."<\\$namespacedModel>"
+            ? '\\'.Collection::class."<array-key, \\$namespacedModel>"
             : "\\$namespacedModel";
 
         $relationshipString = $modelStr->singular()->snake(' ');
