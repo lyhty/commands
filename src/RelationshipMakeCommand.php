@@ -77,7 +77,7 @@ class RelationshipMakeCommand extends GeneratorCommand
             return false;
         }
 
-        // If explicit mode is used but seond model is not given as an option and the relation requires it.
+        // If explicit mode is used but second model is not given as an option and the relation requires it.
         if ($this->bridge->getModelCount() > 1 && $explicit && ! $this->option('second-model')) {
             $this->error($errorText);
 

@@ -3,49 +3,51 @@
 namespace Lyhty\Commands;
 
 use Illuminate\Support\Arr;
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Config;
 use Illuminate\Support\ServiceProvider;
 
 class CommandServiceProvider extends ServiceProvider
 {
-    const CONFIG = 'lyhty_commands';
+    private const string CONFIG_NAME = 'lyhty_commands';
 
     /**
      * Register any application services.
-     *
-     * @return void
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/'.static::CONFIG.'.php', static::CONFIG);
+        $this->mergeConfigFrom(
+            __DIR__ . '/../config/' . self::CONFIG_NAME . '.php', 
+            self::CONFIG_NAME
+        );
     }
 
     /**
      * Bootstrap any package services.
-     *
-     * @return void
      */
     public function boot()
     {
-        $this->publishes([
-            __DIR__.'/../config/'.static::CONFIG.'.php' => config_path(static::CONFIG.'.php'),
-        ]);
+        if (App::runningInConsole()) {
+            $this->publishes([
+                __DIR__ . '/../config/' . self::CONFIG_NAME . '.php' => App::configPath(self::CONFIG_NAME . '.php'),
+            ], 'lyhty-commands-config');
 
-        $this->bootConsoleCommands();
+            $this->bootConsoleCommands();
+        }
     }
 
     /**
      * Commands booter.
-     *
-     * @return void
      */
     protected function bootConsoleCommands(): void
     {
-        if ($this->app->runningInConsole()) {
-            $commands = Arr::where($this->app['config'][static::CONFIG], function ($active) {
-                return $active === true;
-            });
+        $config = Config::get(self::CONFIG_NAME, []);
 
-            $this->commands(array_keys($commands));
-        }
+        $activeCommands = Arr::where(
+            $config, 
+            fn (mixed $active): bool => $active === true
+        );
+
+        $this->commands(array_keys($activeCommands));
     }
 }
